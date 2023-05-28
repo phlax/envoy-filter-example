@@ -18,7 +18,7 @@ jobs:
     if: |
       ${{
           !contains(github.actor, '[bot]')
-          || github.actor == 'sync-envoy[bot]'
+          || github.actor == 'sync-envoy-testing[bot]'
       }}
     steps:
     - name: 'Checkout Repository'
